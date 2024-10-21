@@ -196,12 +196,12 @@ def main():
     st.text("by JTIAPBN.Ai - v.1.0")
     # User input section
     st.header("1. Define Learning Outcomes")
-    num_outcomes = st.number_input("Number of learning outcomes", min_value=1, max_value=10, value=1)
+    #num_outcomes = st.number_input("Number of learning outcomes", min_value=1, max_value=10, value=1)
     
     learning_outcomes = []
-    for i in range(num_outcomes):
-        outcome = st.text_input(f"Learning Outcome {i+1}")
-        learning_outcomes.append(outcome)
+    #for i in range(num_outcomes):
+    outcome = st.text_input(f"Learning Outcome")
+    learning_outcomes.append(outcome)
 
     # Rubric criteria selection
     st.header("2. Select Rubric Criteria")
