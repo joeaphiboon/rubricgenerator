@@ -27,10 +27,12 @@ PRESET_CRITERIA = {
     "Environmental Literacy (K)": "Assesses understanding of environmental issues, their causes, impacts, and approaches to sustainability.",
     "Theoretical Understanding (K)": "Evaluates comprehension of fundamental theories and concepts.",
     "Interdisciplinary Knowledge (K)": "Measures ability to connect ideas across different disciplines.",
+    "Social Change Knowledge (K)": "Assesses understanding of social structures and historical transformations." ,  # เพิ่ม
+    "Cultural Knowledge (K)": "Assesses knowledge of cultural influences and their implications on tourism.",  # เพิ่ม
     
     # Skills (S)
     "Critical Thinking (S)": "Assesses ability to analyze, evaluate, and synthesize information.",
-    "Systematic Decision-Making (S)": "Assesses the ability to use structured processes to make well-informed and impactful decisions.",
+    "Systematic Decision-Making (S)": "Assesses ability to use structured processes to make well-informed and impactful decisions.",
     "Problem-Solving (S)": "Evaluates capacity to identify, frame, and resolve complex problems.",
     "Design Thinking and Innovation (S)": "Assesses ability to apply design thinking methodologies to develop innovative and practical solutions.",
     "Communication Skills (S)": "Measures effectiveness in verbal, written, and visual communication.",
@@ -38,12 +40,15 @@ PRESET_CRITERIA = {
     "Creativity (S)": "Assesses ability to generate original ideas and innovative solutions to challenges.",
     "Digital Literacy (S)": "Assesses ability to navigate, evaluate, and create information using digital technologies.",
     "AI Literacy (S)": "Measures proficiency in understanding and applying artificial intelligence tools, technologies, and ethical considerations.",
-    
+    "Analytical Skills (S)": "Assesses ability to evaluate and interpret data effectively.",  # เพิ่ม
+    "Collaboration Skills (S)": "Measures ability to work effectively in teams and contribute to collective goals.",  # เพิ่ม
+                
     # Ethics (E)
     "Ethical Reasoning (E)": "Evaluates ability to recognize and analyze ethical issues.",
     "Professional Ethics (E)": "Assesses understanding and application of field-specific ethical standards.",
     "Social Responsibility (E)": "Measures awareness and commitment to broader societal impacts.",
     "Sustainability Awareness (E)": "Evaluates understanding of sustainable practices and their impact on environmental, social, and economic systems.",
+    "Cultural Sensitivity (E)": "Assesses understanding and respect for diverse cultural perspectives and practices.",  # เพิ่ม
     
     # Character (C)
     "Perseverance (C)": "Assesses ability to persist through challenges and setbacks.",
@@ -51,6 +56,7 @@ PRESET_CRITERIA = {
     "Empathy and Perspective-Taking (C)": "Measures ability to understand diverse viewpoints, including environmental, societal, and future generational concerns.",
     "Respect (C)": "Measures ability to show consideration and regard for others' opinions, rights, and feelings.",
     "Responsibility (C)": "Assesses commitment to fulfilling duties and being accountable for actions and decisions.",
+    "Open-Mindedness (C)": "Evaluates ability to consider and embrace new ideas and different perspectives.",  # เพิ่ม
     
     # Teamwork and Collaboration
     "Contribution to Team Goals": "Measures students' ability to apply knowledge to help achieve team objectives.",
