@@ -16,6 +16,55 @@ model = st.sidebar.selectbox("Select Model", ["mixtral-8x7b-32768", "llama3-8b-8
 max_tokens = st.sidebar.slider("Max Tokens", min_value=2048, max_value=32786, value=8192, step=256)
 temperature = st.sidebar.slider("Temperature", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
 
+st.sidebar.write(""" ### Notes: \n
+**Knowledge (K)** \n 
+Subject Matter Expertise (K): "Assesses depth and breadth of knowledge in the specific subject area."\n
+Environmental Literacy (K): "Assesses understanding of environmental issues, their causes, impacts, and approaches to sustainability."\n
+Theoretical Understanding (K): "Evaluates comprehension of fundamental theories and concepts."\n
+Interdisciplinary Knowledge (K): "Measures ability to connect ideas across different disciplines."\n
+Social Change Knowledge (K): "Assesses understanding of social structures and historical transformations." \n
+Cultural Knowledge (K): "Assesses knowledge of cultural influences and their implications on tourism."\n
+---
+**Skills (S)** \n
+Critical Thinking (S): "Assesses ability to analyze, evaluate, and synthesize information."\n
+Systematic Decision-Making (S): "Assesses ability to use structured processes to make well-informed and impactful decisions."\n
+Problem-Solving (S): "Evaluates capacity to identify, frame, and resolve complex problems."\n
+Design Thinking and Innovation (S): "Assesses ability to apply design thinking methodologies to develop innovative and practical solutions."\n
+Communication Skills (S): "Measures effectiveness in verbal, written, and visual communication."\n
+Technical Proficiency (S): "Assesses mastery of relevant tools, technologies, or methodologies."\n
+Creativity (S): "Assesses ability to generate original ideas and innovative solutions to challenges."\n
+Digital Literacy (S): "Assesses ability to navigate, evaluate, and create information using digital technologies."\n
+AI Literacy (S): "Measures proficiency in understanding and applying artificial intelligence tools, technologies, and ethical considerations."\n
+Analytical Skills (S): "Assesses ability to evaluate and interpret data effectively." \n
+Collaboration Skills (S): "Measures ability to work effectively in teams and contribute to collective goals." \n
+---
+**Ethics (E)** \n
+Ethical Reasoning (E): "Evaluates ability to recognize and analyze ethical issues."\n
+Professional Ethics (E): "Assesses understanding and application of field-specific ethical standards."\n
+Social Responsibility (E): "Measures awareness and commitment to broader societal impacts."\n
+Sustainability Awareness (E): "Evaluates understanding of sustainable practices and their impact on environmental, social, and economic systems."\n
+Cultural Sensitivity (E): "Assesses understanding and respect for diverse cultural perspectives and practices." \n
+---
+**Character (C)** \n
+Perseverance (C): "Assesses ability to persist through challenges and setbacks."\n
+Integrity (C): "Evaluates adherence to moral and ethical principles in academic and professional contexts."\n
+Empathy and Perspective-Taking (C): "Measures ability to understand diverse viewpoints, including environmental, societal, and future generational concerns."\n
+Respect (C): "Measures ability to show consideration and regard for others' opinions, rights, and feelings."\n
+Responsibility (C): "Assesses commitment to fulfilling duties and being accountable for actions and decisions."\n
+Open-Mindedness (C): "Evaluates ability to consider and embrace new ideas and different perspectives." \n
+---
+**Teamwork and Collaboration** \n
+Contribution to Team Goals: "Measures students' ability to apply knowledge to help achieve team objectives."\n
+Collaborative Problem Solving: "Assesses ability to work with others to solve complex problems."\n
+Leadership and Initiative: "Evaluates capacity to guide and motivate team members."\n
+---
+**Reflection and Growth** \n
+Self-Reflection: "Assesses ability to critically evaluate one's own performance and learning."\n
+Continuous Learning: "Measures commitment to ongoing personal and professional development."\n
+Adaptability: "Evaluates ability to adjust to new situations and incorporate feedback."\n
+""")
+
+
 # Initialize or update Groq client when API key is provided
 if api_key:
     st.session_state.groq_client = Groq(api_key=api_key)
